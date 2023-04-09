@@ -1,7 +1,12 @@
 import PropTypes from 'prop-types';
 import css from './Filter.module.css';
+import { useState } from 'react';
 
-function Filter({ filter, changeFilter }) {
+function Filter({ changeFilter }) {
+ 
+  // eslint-disable-next-line no-unused-vars
+  const [filter, setFilter] = useState();
+
   return (
     <label className={css.label}>
       <p className={css.text}>Find contacts by name</p>
